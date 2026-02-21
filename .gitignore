@@ -41,9 +41,9 @@ app.*.symbols
 app.*.map.json
 
 # Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+/app/android/app/debug
+/app/android/app/profile
+/app/android/app/release
 
 # Do not remove or rename entries in this file, only add new ones
 # See https://github.com/flutter/flutter/issues/128635 for more context.
@@ -136,9 +136,9 @@ unlinked_spec.ds
 **/xcuserdata/
 
 # Windows
-**/windows/flutter/generated_plugin_registrant.cc
-**/windows/flutter/generated_plugin_registrant.h
-**/windows/flutter/generated_plugins.cmake
+app/windows/flutter/generated_plugin_registrant.cc
+app/windows/flutter/generated_plugin_registrant.h
+app/windows/flutter/generated_plugins.cmake
 
 # Linux
 **/linux/flutter/generated_plugin_registrant.cc
@@ -162,16 +162,16 @@ coverage/
 .flutter-versions
 
 # Build output directories
-android/app/build/
+app/android/app/build/
 app/build/
-ios/Flutter/App.framework
-ios/Flutter/Flutter.framework
-ios/.symlinks/
-ios/Pods/
-macos/Flutter/ephemeral/
-linux/flutter/ephemeral/
-windows/flutter/ephemeral/
-web/flutter/
+app/ios/Flutter/App.framework
+app/ios/Flutter/Flutter.framework
+app/ios/.symlinks/
+app/ios/Pods/
+app/macos/Flutter/ephemeral/
+app/linux/flutter/ephemeral/
+app/windows/flutter/ephemeral/
+app/web/flutter/
 
 
 # Generated files
@@ -201,7 +201,7 @@ keystore.properties
 .env
 #.env_development
 #.env_production
-/lib/localization/generated/
+/app/lib/localization/generated/
 /devtools_options.yaml
 /mason-lock.json
 /.mason/bricks.json
