@@ -2,6 +2,7 @@ name: flutter_playground
 
 workspace:
   - app/
+  - core/common/
 
 environment:
   sdk: ^3.10.4
@@ -17,6 +18,7 @@ melos:
 
       dependencies:
         cupertino_icons: ^1.0.8
+        logger: ^2.6.1
 
       dev_dependencies:
         flutter_test:
