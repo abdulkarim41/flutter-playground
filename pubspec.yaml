@@ -8,14 +8,6 @@ environment:
 
 dev_dependencies:
   melos: ^7.1.0
-  flutter_test:
-    sdk: flutter
-
-
-
-flutter:
-
-  uses-material-design: true
 
 melos:
   command:
