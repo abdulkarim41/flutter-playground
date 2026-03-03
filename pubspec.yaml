@@ -5,6 +5,7 @@ workspace:
   - core/common/
   - core/data/
   - core/domain/
+  - model/entity/
 
 environment:
   sdk: ^3.10.4
