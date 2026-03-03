@@ -1,7 +1,7 @@
-name: app
+name: domain
+publish_to: none
 description: ""
-publish_to: "none"
-version: 1.0.0
+version: 0.0.1
 resolution: workspace
 
 environment:
@@ -11,18 +11,11 @@ dependencies:
   flutter:
     sdk: flutter
 
-  common: ^0.0.1
-  data: ^0.0.1
-
-  cupertino_icons: ^1.0.8
+  logger: ^2.6.1
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
 
-flutter:
-  uses-material-design: true
 
-  config:
-    enable-lldb-debugging: false

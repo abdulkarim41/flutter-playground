@@ -3,6 +3,8 @@ name: flutter_playground
 workspace:
   - app/
   - core/common/
+  - core/data/
+  - core/domain/
 
 environment:
   sdk: ^3.10.4
@@ -17,6 +19,10 @@ melos:
         sdk: ^3.10.4
 
       dependencies:
+        common: ^0.0.1
+        data: ^0.0.1
+        domain: ^0.0.1
+
         cupertino_icons: ^1.0.8
         logger: ^2.6.1
 
