@@ -10,6 +10,8 @@ workspace:
   - core/navigation/
   - model/apiresponse/
   - model/entity/
+  - tooling/secreat_env/
+  - tooling/code_analyzer/
 
 environment:
   sdk: ^3.10.4
@@ -45,3 +47,6 @@ melos:
     generate:barrels:
       run: dart run melos_scripts/barrel_generator.dart
       description: Update all package barrel files
+
+    env_secret_generate:
+      run: melos exec --scope secret_env -- dart run build_runner build
