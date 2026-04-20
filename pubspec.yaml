@@ -45,9 +45,30 @@ melos:
       run: melos exec -- flutter clean && melos bootstrap
       description: Cleans and then fetches dependencies for all packages.
 
+    # Production APK builds
+    build:apk:production:release:
+      run: melos exec --scope="app" -- flutter build apk --target=lib/application/main_production.dart --flavor production --release
+      description: Build production APK (release mode)
+
+    # Development APK builds
+    build:apk:development:release:
+      run: melos exec --scope="app" -- flutter build apk --target=lib/application/main_development.dart --flavor development --release
+      description: Build development APK (release mode)
+
     generate:barrels:
       run: dart run melos_scripts/barrel_generator.dart
       description: Update all package barrel files
 
     env_secret_generate:
       run: melos exec --scope secret_env -- dart run build_runner build
+
+    update_overrides:
+      run: melos exec -- dart run $(pwd)/scripts/pubspec_overrides.dart && melos bootstrap
+
+    update_minor_deps:
+      description: Update minor dependencies
+      run: dart run scripts/update_melos_minor_deps.dart
+
+    update_major_deps:
+      description: Update major dependencies
+      run: dart run scripts/update_melos_major_deps.dart
