@@ -3,6 +3,7 @@ name: flutter_playground
 workspace:
   - app/
   - core/common/
+  - core/locale/
   - core/data/
   - core/domain/
   - model/apiresponse/
