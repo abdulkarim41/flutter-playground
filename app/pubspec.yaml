@@ -8,6 +8,8 @@ environment:
   sdk: ^3.10.4
 
 dependencies:
+  flutter_localizations:
+    sdk: flutter
   flutter:
     sdk: flutter
 
@@ -15,6 +17,7 @@ dependencies:
   common: ^0.0.1
   domain: ^0.0.1
   data: ^0.0.1
+  entity: ^0.0.1
   designsystem: ^0.0.1
   ui: ^0.0.1
   navigation: ^0.0.1
@@ -26,9 +29,28 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^6.0.0
+  dart_code_linter: ^4.0.2
+  flutter_launcher_icons: ^0.14.4
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/icons/
+    - assets/images/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
 
   config:
     enable-lldb-debugging: false
