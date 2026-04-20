@@ -15,7 +15,7 @@ workspace:
   - tooling/code_analyzer/
 
 environment:
-  sdk: ^3.10.4
+  sdk: ^3.11.4
 
 dev_dependencies:
   melos: ^7.1.0
