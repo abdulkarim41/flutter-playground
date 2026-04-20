@@ -3,6 +3,7 @@ name: flutter_playground
 workspace:
   - app/
   - core/common/
+  - core/designsystem/
   - core/locale/
   - core/data/
   - core/domain/
