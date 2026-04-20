@@ -15,6 +15,7 @@ dependencies:
   data: ^0.0.1
   app_locale: ^1.0.0
   designsystem: ^0.0.1
+  navigation: ^0.0.1
 
   cupertino_icons: ^1.0.8
 
