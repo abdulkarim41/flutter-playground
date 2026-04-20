@@ -4,6 +4,7 @@ workspace:
   - app/
   - core/common/
   - core/designsystem/
+  - core/ui/
   - core/locale/
   - core/data/
   - core/domain/
