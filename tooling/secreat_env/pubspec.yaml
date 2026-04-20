@@ -5,7 +5,7 @@ version: 0.0.1
 resolution: workspace
 
 environment:
-  sdk: ^3.11.4
+  sdk: ^3.10.4
 
 # Note: The environment configuration and dependency versions are managed by Melos.
 #
