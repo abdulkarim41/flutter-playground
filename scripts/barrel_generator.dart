@@ -1,4 +1,4 @@
-// melos_scripts/barrel_generator.dart
+// scripts/barrel_generator.dart
 import 'dart:io';
 // ignore: depend_on_referenced_packages
 import 'package:path/path.dart' as path;
